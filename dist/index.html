@@ -1,0 +1,27 @@
+<!doctype html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><title>秦邮企业安全风险预警系统</title><script defer="defer" src="/js/chunk-vendors.6d5ddc46.js"></script><script defer="defer" src="/js/app.a7ef31ca.js"></script><link href="/css/chunk-vendors.a301cf47.css" rel="stylesheet"><link href="/css/app.9dc575f8.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but v3 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body><script src="/hk/jquery-1.7.1.min.js"></script><script src="/hk/jsVideoPlugin-1.0.0.min.js"></script><script src="/hk/webVideoCtrl.js"></script><script>// rem等比适配配置文件
+    // 基准大小
+    // const baseSize = 80
+    // 设置 rem 函数
+    function setRem(){
+        // 当前页面宽度相对于 1920宽的缩放比例，可根据自己需要修改。
+        const scale = document.documentElement.clientWidth / 20
+        // 设置页面根节点字体大小（“Math.min(scale, 2)” 指最高放大比例为2，可根据实际业务需求调整）
+        document.documentElement.style.fontSize = scale + 'px'
+        // console.log(document.documentElement.style.fontSize)
+    }
+    // 初始化
+    setRem()
+    // 改变窗口大小时重新设置 `rem`
+    window.onresize = function () {
+        setRem()
+    }
+
+
+//     window.onLoad  = function(){
+//         var map = new AMap.Map('container');
+//   }
+//   var url = 'https://webapi.amap.com/maps?v=1.4.15&key=68ca65bf2fc2c8b395eaab564115287d	&callback=onLoad';
+//   var jsapi = doc.createElement('script');
+//   jsapi.charset = 'utf-8';
+//   jsapi.src = url;
+//   document.head.appendChild(jsapi);</script></html>

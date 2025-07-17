@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- <title><%= htmlWebpackPlugin.options.title %></title> -->
+    <title>秦邮企业安全风险预警系统</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=4.0, user-scalable=no"> -->
+</head>
+<body>
+<noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+</noscript>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+<!-- <script src="https://webapi.amap.com/maps?v=1.4.15&key=e2286ba58bd9621be85e31415c7e03d6&plugin=AMap.AR"></script> -->
+<!-- <script type="text/javascript">
+    window._AMapSecurityConfig = {
+        securityJsCode:'0880215613b23afb6984e5798737c355',
+    }
+</script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=e2286ba58bd9621be85e31415c7e03d6"></script>  -->
+<script src="/hk/jquery-1.7.1.min.js"></script>
+<script src="/hk/jsVideoPlugin-1.0.0.min.js"></script>    
+<script src="/hk/webVideoCtrl.js"></script>
+<script>
+    // rem等比适配配置文件
+    // 基准大小
+    // const baseSize = 80
+    // 设置 rem 函数
+    function setRem(){
+        // 当前页面宽度相对于 1920宽的缩放比例，可根据自己需要修改。
+        const scale = document.documentElement.clientWidth / 20
+        // 设置页面根节点字体大小（“Math.min(scale, 2)” 指最高放大比例为2，可根据实际业务需求调整）
+        document.documentElement.style.fontSize = scale + 'px'
+        // console.log(document.documentElement.style.fontSize)
+    }
+    // 初始化
+    setRem()
+    // 改变窗口大小时重新设置 `rem`
+    window.onresize = function () {
+        setRem()
+    }
+
+
+//     window.onLoad  = function(){
+//         var map = new AMap.Map('container');
+//   }
+//   var url = 'https://webapi.amap.com/maps?v=1.4.15&key=68ca65bf2fc2c8b395eaab564115287d	&callback=onLoad';
+//   var jsapi = doc.createElement('script');
+//   jsapi.charset = 'utf-8';
+//   jsapi.src = url;
+//   document.head.appendChild(jsapi);
+</script>
+</html>
